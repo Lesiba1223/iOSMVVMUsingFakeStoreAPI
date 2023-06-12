@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C96BFE4B-CD57-42CF-A6D6-8983C9BCFF8E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F337850B-A0DD-4EFB-891E-2523C7955740"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ProductCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - 82e94ce98fb32078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.productNameLbl.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - 66ea87af6ce515ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.productNameLbl.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - 8888086a2373d000"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.productNameLbl.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - f609ec440a3f74d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.productNameLbl.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - 6ecf66f43e0f00ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.init(frame: __C.CGRect) -&gt; MVVMFakeStorePractice.ProductCollectionViewCell"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F337850B-A0DD-4EFB-891E-2523C7955740 - aa6dbea6b31b2b20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVVMFakeStorePractice.ProductCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MVVMFakeStorePractice.ProductCollectionViewCell&gt;"
+                  moduleName = "MVVMFakeStorePractice"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/damacm1139/Desktop/iOS/MVVMFakeStorePractice/MVVMFakeStorePractice/ProductCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7397FB45-A91A-46CB-A624-EEB2A9249599"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMFakeStorePractice/Webservice/webserverice.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "getProducts(url:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

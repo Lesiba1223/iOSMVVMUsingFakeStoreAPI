@@ -13,6 +13,8 @@ class ProductViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var searchProduct = [Product]()
+    var item = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,10 @@ class ProductViewController: UIViewController {
         }
         
         Webservice().getProducts(url: url) { products in
-            
             if let products = products {
                 self.productsVM = ProductsViewModel(products: products)
+                self.searchProduct = products
+                self.item = products
                 DispatchQueue.main.async {
                     print("Success")
                     self.collectionView.reloadData()
@@ -39,6 +42,7 @@ class ProductViewController: UIViewController {
             }
         }
     }
+    
 }
 
 extension ProductViewController: UICollectionViewDataSource{
@@ -48,7 +52,7 @@ extension ProductViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.productsVM.numberOfRowsInSection(section)
+        return self.searchProduct.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -59,11 +63,11 @@ extension ProductViewController: UICollectionViewDataSource{
         
         print(indexPath.row)
         
-        let imageURL = self.productsVM.productAtIndex(indexPath.row).image as? String
+        let imageURL = searchProduct[indexPath.row].image as? String
         print(String(describing: imageURL!.description))
         
         if let url = URL(string: imageURL!){
-            
+            //let imageURL = searchProduct[indexPath.row].image as? String
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let data = data {
                     // Convert the downloaded data into a UIImage
@@ -116,6 +120,25 @@ extension UIImageView {
     func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
+    }
+}
+extension ProductViewController: UISearchBarDelegate{
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchProduct = []
+        if searchText == ""
+        {
+            searchProduct = item
+        }
+        for word in item{
+            if word.title.lowercased().contains(searchText.lowercased())
+            {
+                searchProduct.append(word)
+                self.collectionView.reloadData()
+            }
+        }
+        self.collectionView.reloadData()
+        //self.collectionView.reloadSections(IndexSet(integer: 0))
     }
 }
 

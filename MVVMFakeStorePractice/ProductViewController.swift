@@ -80,12 +80,13 @@ extension ProductViewController: UICollectionViewDataSource{
         
         cell.productNameLbl.text = productsVM.title
         cell.productImageView.image = UIImage(named: self.productsVM.productAtIndex(indexPath.row).image)
+        cell.productPriceLbl.text = "R " + String(productsVM.price)
         //cell.productImageView.image = UIImage(named: productsVM.image)
-        
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        cell.layer.cornerRadius = 10
         cell.setNeedsLayout()
         cell.reloadInputViews()
-        
-        
         return cell
     }
 }

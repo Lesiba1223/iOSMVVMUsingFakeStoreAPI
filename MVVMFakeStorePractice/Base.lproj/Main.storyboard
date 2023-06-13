@@ -21,43 +21,55 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rty-1r-LTa">
-                                    <size key="itemSize" width="187" height="331"/>
+                                    <size key="itemSize" width="223" height="371"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="hK3-GS-JYa" customClass="ProductCollectionViewCell" customModule="MVVMFakeStorePractice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="331"/>
+                                        <rect key="frame" x="85" y="0.0" width="223" height="371"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="haL-Kf-Fwl">
-                                            <rect key="frame" x="0.0" y="0.0" width="187" height="331"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="371"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O78-FM-UDX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="274.33333333333331"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="223" height="321.66666666666669"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeswdwdwdwdwdwdwddl" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMg-pj-kka">
-                                                    <rect key="frame" x="8" y="282.33333333333331" width="171" height="40.666666666666686"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMg-pj-kka">
+                                                    <rect key="frame" x="8" y="321.66666666666669" width="207" height="20.333333333333314"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBy-Sx-Krx">
+                                                    <rect key="frame" x="8" y="346" width="207" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jMg-pj-kka" secondAttribute="trailing" constant="8" id="9LA-kK-fhz"/>
                                                 <constraint firstItem="O78-FM-UDX" firstAttribute="top" secondItem="haL-Kf-Fwl" secondAttribute="top" id="AmA-UP-xe0"/>
-                                                <constraint firstAttribute="trailing" secondItem="jMg-pj-kka" secondAttribute="trailing" constant="8" id="TnK-Y8-mRt"/>
-                                                <constraint firstItem="O78-FM-UDX" firstAttribute="leading" secondItem="haL-Kf-Fwl" secondAttribute="leading" id="WaA-qf-3jD"/>
-                                                <constraint firstItem="jMg-pj-kka" firstAttribute="top" secondItem="O78-FM-UDX" secondAttribute="bottom" constant="8" id="iWr-tH-mwK"/>
-                                                <constraint firstAttribute="bottom" secondItem="jMg-pj-kka" secondAttribute="bottom" constant="8" id="jV3-Tj-BXK"/>
-                                                <constraint firstItem="jMg-pj-kka" firstAttribute="leading" secondItem="haL-Kf-Fwl" secondAttribute="leading" constant="8" id="k77-gy-aq6"/>
-                                                <constraint firstAttribute="trailing" secondItem="O78-FM-UDX" secondAttribute="trailing" id="uEa-PV-I6G"/>
+                                                <constraint firstItem="jMg-pj-kka" firstAttribute="leading" secondItem="haL-Kf-Fwl" secondAttribute="leading" constant="8" id="IKg-qQ-FYi"/>
+                                                <constraint firstAttribute="bottom" secondItem="OBy-Sx-Krx" secondAttribute="bottom" constant="4" id="Llo-Mx-dFw"/>
+                                                <constraint firstAttribute="trailing" secondItem="O78-FM-UDX" secondAttribute="trailing" id="MD6-Q7-Uvi"/>
+                                                <constraint firstItem="O78-FM-UDX" firstAttribute="top" secondItem="haL-Kf-Fwl" secondAttribute="top" id="UO8-06-lHO"/>
+                                                <constraint firstItem="OBy-Sx-Krx" firstAttribute="top" secondItem="jMg-pj-kka" secondAttribute="bottom" constant="4" id="brK-jf-Pbm"/>
+                                                <constraint firstItem="jMg-pj-kka" firstAttribute="top" secondItem="O78-FM-UDX" secondAttribute="bottom" id="cgY-SI-Nlg"/>
+                                                <constraint firstItem="OBy-Sx-Krx" firstAttribute="leading" secondItem="haL-Kf-Fwl" secondAttribute="leading" constant="8" id="lla-Y5-Gei"/>
+                                                <constraint firstAttribute="trailing" secondItem="OBy-Sx-Krx" secondAttribute="trailing" constant="8" id="nbe-XZ-anB"/>
+                                                <constraint firstItem="O78-FM-UDX" firstAttribute="leading" secondItem="haL-Kf-Fwl" secondAttribute="leading" id="o1g-QB-Yqu"/>
+                                                <constraint firstItem="OBy-Sx-Krx" firstAttribute="width" secondItem="jMg-pj-kka" secondAttribute="width" id="zTA-Kx-2mD"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="187" height="331"/>
+                                        <size key="customSize" width="223" height="371"/>
                                         <connections>
                                             <outlet property="productImageView" destination="O78-FM-UDX" id="QMy-hs-CsL"/>
                                             <outlet property="productNameLbl" destination="jMg-pj-kka" id="fyy-HA-QDw"/>
+                                            <outlet property="productPriceLbl" destination="OBy-Sx-Krx" id="qcr-zA-viX"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

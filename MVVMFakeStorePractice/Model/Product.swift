@@ -12,13 +12,15 @@ struct Product: Codable {
     let title: String
     let price: Double
     let description: String
-    let category: Category
+    let category: String
     let image: String
-}
 
-enum Category: String, Codable {
-    case electronics = "electronics"
-    case jewelery = "jewelery"
-    case menSClothing = "men's clothing"
-    case womenSClothing = "women's clothing"
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case title = "title"
+        case price = "price"
+        case description = "description"
+        case category = "category"
+        case image = "image"
+    }
 }

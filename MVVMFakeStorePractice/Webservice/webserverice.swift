@@ -14,7 +14,7 @@ struct Webservice {
                 completion(nil)
             } else if let data = data {
                     print(data)
-                let products = try? JSONDecoder().decode(Products.self, from: data).products
+                let products = try? JSONDecoder().decode([Product].self, from: data)
                 if let products = products{
                     print(products)
                     completion(products)

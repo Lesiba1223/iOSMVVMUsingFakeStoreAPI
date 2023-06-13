@@ -11,4 +11,11 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var productNameLbl: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
+    
+    
+    func imageSetup(with product: Product){
+        productNameLbl.text = product.title
+        productImageView.image = UIImage(named: product.image
+        )
+    }
 }
